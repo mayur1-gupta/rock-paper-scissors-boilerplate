@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./assets/bg.png);
+    height: max-content;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.player-area {
+    border: 1px solid yellow;
+    height: 500px;
+    width: 500px;
+}
+
+.computer-area {
+    border: 1px solid yellow;
+    height: 500px;
+    width: 500px;
+}
+
+span {
+    font-size: 100px;
+    color: white;
+    font-weight: bolder;
+}
+
+.scores {
+    margin: 100px 0 60px 600px;
+}
+
+.hand-icon {
+    position: absolute;
+    visibility: hidden;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-container {
+    margin-top: 320px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+#win {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#result-header {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    visibility: hidden;
+}
+
+#game-status {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    visibility: hidden;
+}
+
+#play-again-button {
+    margin: 50px 500px 100px 600px;
+    font-size: 40px;
+    color: yellow;
+    border: 0 solid black;
+    background-color: transparent;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    visibility: hidden;
+}
+#play-again{
+    background-color: rgb(90, 37, 192);
+    color: aliceblue;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+}
+#result-section{
+    display: flex;
+    font-size: 30px;
+}

@@ -1,21 +1,42 @@
-<!-- 
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <script src="app.js"></script>
-    </head>
-    <body>
-
-     <div id="gamePage" class="page hidden">
-        <h1 class="heading">Rock Paper Scissors</h1>
-        
-        <div class="shapes">
-            <img src="assets/rock-logo.png" alt="Rock" onclick="play('rock')">
-            <img src="assets/paper-logo.png" alt="Paper" onclick="play('paper')">
-            <img src="assets/scissors-logo.png" alt="Scissors" onclick="play('scissors')">
-        </div>
-        <div id="result"></div>
-        <button onclick="restart()">Play Again</button>
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+    <div class="score-container">
+        <span id="player-score">0</span>
+        <span>/</span>
+        <span id="computer-score">0</span>
     </div>
-    </body>
-</html> -->
+    <div class="game-container">
+    
+        <div class="player-area">
+            <h1>Your Turn</h1>
+            <img id="rock-hand" class="hand-icon" src="./assets/rock-hand.png" alt="rock">
+            <img id="paper-hand" class="hand-icon" src="./assets/paper-hand.png" alt="paper">
+            <img id="scissor-hand" class="hand-icon" src="./assets/scissors-hand.png" alt="scissor">
+            <div class="icon-container">
+                <img id="rock-logo" src="./assets/rock-logo.png" alt="rock">
+                <img id="paper-logo" src="./assets/paper-logo.png" alt="paper">
+                <img id="scissors-logo" src="./assets/scissors-logo.png" alt="scissor">
+            </div>
+        </div>
+        <div class="versus-section">
+            <img class="vs-icon" src="./assets/vs.png" alt="vs">
+        </div>
+        <div class="computer-area" >
+            <h1>Computer's Turn</h1>
+            <img id="rock-computer" class="hand-icon" src="./assets/rock-hand.png" alt="rock">
+            <img id="paper-computer" class="hand-icon" src="./assets/paper-hand.png" alt="paper">
+            <img id="scissor-computer" class="hand-icon" src="./assets/scissors-hand.png" alt="scissor">
+        </div>
+    </div>
+    <div id="result-section">
+        <h1 id="result-header">You<span id="win">Win</span><span id="result-outcome"></span><span id="game">The Game</span></h1>
+        <button id="play-again-button"><input type="button" value="Play Again" id="play-again"></button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

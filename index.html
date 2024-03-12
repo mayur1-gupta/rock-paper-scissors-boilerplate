@@ -10,23 +10,9 @@
   <!-- Starting page -->
   <div id="startPage" class="page">
     <h1 class="heading">Rock Paper Scissors Game</h1>
-    <button onclick="startGame()">Start Game</button>
+    <img src="./assets/game-image.png" alt="" class="game-image">
+    <button onclick="startGame()" class="play-link" id="play"><img src="./assets/play-button.png" alt="" class="play-button"><span>Start Game</span></button>
   </div>
-
-  <!-- Game page -->
-  <div id="gamePage" class="page hidden">
-    <h1 class="heading">Rock Paper Scissors</h1>
-    <div class="shapes">
-      <img src="assets/rock-logo.png" alt="Rock" onclick="play('rock')">
-      <img src="assets/paper-logo.png" alt="Paper" onclick="play('paper')">
-      <img src="assets/scissors-logo.png" alt="Scissors" onclick="play('scissors')">
-  </div>
-    </div>
-    <div id="result"></div>
-    <div id="score">Score: Player - <span id="playerScore">0</span>, Computer - <span id="computerScore">0</span></div>
-    <button onclick="restart()">Play Again</button>
-  </div>
-
   <script src="app.js"></script>
 </body>
 </html>
