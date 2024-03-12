@@ -1,0 +1,50 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image:url(assets/bg.png);
+  margin: 0%;
+}
+
+.page {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.heading {
+  color: rgb(90, 37, 192);
+  font-size: 68px;
+  font-weight: bold;
+}
+
+.shapes img {
+  width: 150px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.game-image {
+  width: 500px;
+}
+.play-button {
+  width: 40px;
+  margin-right: 20px;
+}
+.play-link{
+ background-color: black;
+ color: aliceblue;
+ height: 40px;
+ border-radius: 6px;
+}
+.play-link:hover{
+  background-color: rgb(90, 37, 192);
+  color: aliceblue;
+}
